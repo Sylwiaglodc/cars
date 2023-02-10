@@ -1,5 +1,11 @@
 package model;
 
+/**
+ * @author sylw - srglod
+ * CIS175 - Spring 2023
+ * Feb 09, 2023
+ */
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
