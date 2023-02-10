@@ -1,20 +1,19 @@
-/**
- * @author sylw - srglod
- * CIS175 - Spring 2023
- * Jan 30, 2023
- */
+
 package cars;
 
 import java.util.List;
+
 import java.util.Scanner;
 
 import controller.CarListHelper;
 import model.CarList;
 
 /**
- * @author sylw
- *
+ * @author sylw - srglod
+ * CIS175 - Spring 2023
+ * Jan 30, 2023
  */
+
 public class StartCarsProgram {
 
 	static Scanner in = new Scanner(System.in);
@@ -22,15 +21,15 @@ public class StartCarsProgram {
 
 	private static void addAnItem() {
 		// TODO Auto-generated method stub
-		System.out.print("Enter a model: ");
-		String model = in.nextLine();
 		System.out.print("Enter a make: ");
 		String make = in.nextLine();
+		System.out.print("Enter a model: ");
+		String model = in.nextLine();
 		System.out.print("Enter how many cylinders: ");
 		int cylinders = in.nextInt();
 		System.out.print("Enter how many liters: ");
 		double liters = in.nextDouble();
-		System.out.print("Do you have a turbo (True or False): ");
+		System.out.print("Do you have a turbo (true or false)? : ");
 		boolean turbo = in.nextBoolean();
 		
 		
@@ -41,15 +40,15 @@ public class StartCarsProgram {
 
 	private static void deleteAnItem() {
 		// TODO Auto-generated method stub
-		System.out.print("Enter a model to delete: ");
-		String make = in.nextLine();
 		System.out.print("Enter a make to delete: ");
+		String make = in.nextLine();
+		System.out.print("Enter a model to delete: ");
 		String model = in.nextLine();
 		System.out.print("Enter how many liters to delete: ");
 		double liters = in.nextDouble();
 		System.out.print("Enter how many cylinders to delete: ");
 		int cylinders = in.nextInt();
-		System.out.print("delete turbo (true or false)?: ");
+		System.out.print("Does your car have a turbo to delete (true or false)?: ");
 		boolean turbo = in.nextBoolean();
 		
 		CarList toDelete = new CarList(make, model, liters, cylinders, turbo);

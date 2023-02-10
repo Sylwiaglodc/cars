@@ -90,7 +90,7 @@ public class CarList {
 	}
 	
 	public String returnCarDetails( ) {
-		return this. model + ": " + this.make + this.liters + this.cylinders + this.turbo;
+		return "Make: " + this.make + "\n" + "Model: "+ this. model + "\n" + "Liters: " + this.liters + "\n" + "Cylinders: " + this.cylinders +"\n" + "turbo: " + this.turbo;
 	}
 	
 
